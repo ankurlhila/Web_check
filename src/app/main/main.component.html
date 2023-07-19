@@ -1,0 +1,28 @@
+<div class="container">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Video Check
+                </mat-panel-title>
+                <mat-panel-description>
+                    Click on this and run video check to see if your camera is working
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <app-vid></app-vid>
+
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Microphone Check
+                </mat-panel-title>
+                <mat-panel-description>
+                    Click on this and run Microphone check to see if your microphone is working
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <app-aud></app-aud>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

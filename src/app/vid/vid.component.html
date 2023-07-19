@@ -1,0 +1,11 @@
+<p>To check if your camera is working, press the button.</p>
+<!-- <button mat-raised-button>Video
+    Check</button> -->
+<video class="video" #liveVideo autoplay controls></video>
+<span class="m-1"></span>
+<video class="video" style="width:480px !important;" controls #recordedVideo></video>
+<br>
+<button class="btn btn-success btn-lg" *ngIf="!isRecording" (click)="startVideoRecording()">Start
+    Recording</button>
+<button class="btn btn-warning btn-lg" *ngIf="isRecording" (click)="stopVideoRecording()">Stop
+    Recording</button>
